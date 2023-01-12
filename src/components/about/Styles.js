@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { Container, Colors} from "../../styles/Styles";
+import { Container, Colors, Bgradient} from "../../styles/Styles";
 
 export const AboutIMGs = styled(Container)`
   flex-direction: column;
   width: 500px;
   height: 500px;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2)); 
+ 
 
   @media (max-width: 1050px){
       margin: 80px 0 0 0;
@@ -26,7 +26,7 @@ export const Circle = styled.div`
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background-color: ${Colors.primary};
+  background: ${Bgradient.laranja};
 
   @media (max-width: 1050px){
       width: 220px;

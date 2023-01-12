@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { Colors, Effects, FontSizes } from './Styles';
+import { Bgradient, Colors, FontSizes } from './Styles';
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -27,10 +27,10 @@ const GlobalStyle = createGlobalStyle`
     width: 20px;
   }
   ::-webkit-scrollbar-track{
-    background-color: ${Colors.secondary};
+    background: ${Bgradient.preto};
   }
   ::-webkit-scrollbar-thumb{
-    background: linear-gradient(0deg, rgba(217,77,2,1) 0%, rgba(248,99,0,1) 53%, rgba(255,117,25,1) 100%);
+    background: ${Bgradient.laranja};
     border: solid 2px ${Colors.secondary};;
     border-radius: 25px;
     transition: 0.5s ease-in-out;

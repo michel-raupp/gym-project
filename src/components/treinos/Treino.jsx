@@ -4,7 +4,7 @@ import iconimage1 from "../../assets/icons/muscle.png";
 import iconimage2 from "../../assets/icons/diet.png";
 import iconimage3 from "../../assets/icons/healthy-food.png";
 import iconimage4 from "../../assets/icons/kettlebell.png";
-import { Column } from "../../styles/Styles";
+import { Colors, Column, Paragraph } from "../../styles/Styles";
 import { TreinoContainer, TreinoTitle, TreinoContainer2, ParagraphOrange, Treinos, Brilho } from "./Styles";
 
 function TreinoBox(props) {
@@ -24,7 +24,7 @@ function Treino() {
     <Treinos id="treinos">
       <TreinoTitle>
         READY TO ASSIST
-        <span style={{ color: "rgb(248, 99, 0)", margin: "0 0 0 20px" }}>
+        <span style={{ color: `${Colors.black}`, margin: "0 0 0 20px" }}>
           YOU
         </span>
       </TreinoTitle>
@@ -52,10 +52,10 @@ function Treino() {
           />
 
         </TreinoContainer2>
-        <ParagraphOrange style={{margin: '0 0px'}}>
+        <Paragraph style={{color: `${Colors.white}`, margin: '0 0px'}}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
-        </ParagraphOrange>
+        </Paragraph>
       </Brilho >
     </Treinos>
 

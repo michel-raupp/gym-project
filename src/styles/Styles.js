@@ -11,8 +11,15 @@ export const Colors = {
 
 export const Effects ={
     sombra: 'none',  //'drop-shadow(0px 0px 10px rgba(0, 0, 0))',//
-    sombrinha: 'drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.4))',
+    sombrinha: 'drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4))',
     brilho: 'none' //drop-shadow(0px 0px 5px rgba(248, 99, 0))//
+}
+
+export const Bgradient ={
+    preto:'linear-gradient(40deg, rgba(15,15,15,1) 27%, rgba(34,34,34,1) 100%)',
+    cinza:'linear-gradient(0deg, rgba(15,15,15,1) 27%, rgba(34,34,34,1) 100%)',
+    laranja: 'linear-gradient(0deg, rgba(217,77,2,1) 0%, rgba(248,99,0,1) 53%, rgba(255,117,25,1) 100%)',
+    branco: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,117,25,1) 100%);',
 }
 
 export const FontSizes = {
@@ -68,7 +75,7 @@ export const FlexStartAlign = styled(Container)`
 //Bg é Background
 export const BgBlack = styled.div`
     width: 70%;
-    background: linear-gradient(36deg, rgba(24,25,27,1) 50%, rgba(33,33,35,1) 100%);
+    background: ${Bgradient.cinza};
     height: 900px;
 
     @media (max-width: 800px){
@@ -81,10 +88,11 @@ export const BgBlack = styled.div`
 `
 
 export const BgOrange = styled(BgBlack)`
-  background: linear-gradient(0deg, rgba(217,77,2,1) 0%, rgba(248,99,0,1) 53%, rgba(255,117,25,1) 100%);
+  background: ${Bgradient.laranja};
   width: 30%;
+
   @media (max-width: 800px){
-  display: none;
+    display: none;
   }
 `
 export const BgContainer = styled(Container)`

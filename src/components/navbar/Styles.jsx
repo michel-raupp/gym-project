@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { FontSizes, Colors, Container, Effects} from "../../styles/Styles"
+import { FontSizes, Colors, Container, Effects, Bgradient} from "../../styles/Styles"
 
 export const Logo = styled.p`
   font-size: ${FontSizes.cat};
@@ -16,7 +16,7 @@ export const NavbarSection = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(0deg, rgba(24,25,27,1) 0%, rgba(33,33,35,1) 100%);
+  background: ${Bgradient.preto};
   padding: 20px 80px;
   filter: ${Effects.sombra};
   
@@ -29,7 +29,7 @@ export const NavbarSection = styled.nav`
 }
 
 #mobile i {
-  color: #fff;
+  color: ${Colors.white};
   align-items: center;
 }
 
@@ -102,7 +102,7 @@ a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: ${Colors.white};
   transition: 0.3s ease-in-out;
 
   @media (max-width: 1000px){
@@ -121,7 +121,7 @@ a {
 
 li a:hover,
 li a.active {
-  color: rgb(248, 99, 0);
+  color: ${Colors.primary};
 }
 
 a:hover::after,
@@ -129,7 +129,7 @@ a.active::after {
   content: "";
   width: 30%;
   height: 2px;
-  background: rgb(248, 99, 0);
+  background: ${Colors.primary};
   position: absolute;
   bottom: -4px;
   left: 20px;

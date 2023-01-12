@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors, Container, Effects, Paragraph, Column} from "../../styles/Styles"
+import { Colors, Container, Effects, Paragraph, Column, Bgradient} from "../../styles/Styles"
 
 export const TreinoContainer = styled(Container)`
     flex-direction: column;
@@ -7,13 +7,13 @@ export const TreinoContainer = styled(Container)`
     border: 3px;
     border-radius: 5px;
     padding: 40px 40px;
-    border: 3px solid ${Colors.primary};
-    color:${Colors.bright};
-
+    border: 3px;
+    color:${Colors.primary};
+    background: ${Colors.white};
+    filter: ${Effects.sombrinha};
     img {
-        filter: invert(100%);
         width: 100px;
-
+        
         @media (max-width: 1050px){
             width: 80px;
         }
@@ -131,7 +131,7 @@ export const TreinoContainer2 = styled.div`
 `
 export const ParagraphOrange = styled(Paragraph)`
     margin: 10px 0 0 0;
-    color: ${Colors.grey};
+    color: ${Colors.black};
 
     @media (max-width: 1050px){
         font-size: 14px;
@@ -141,7 +141,7 @@ export const ParagraphOrange = styled(Paragraph)`
 export const Treinos = styled(Column)`
   height: 700px;
   margin: 0;
-  background: ${Colors.black};
+  background: ${Bgradient.laranja};
 
   @media (max-width: 800px){
     height: 1100px;
@@ -161,5 +161,5 @@ export const Treinos = styled(Column)`
 `
 
 export const Brilho = styled(Column)`
-    filter: ${Effects.brilho};
+    filter: ${Effects.sombra};
 `

@@ -1,15 +1,15 @@
 import styled from "styled-components"
-import { Colors, Container, Effects, Column } from "../../styles/Styles"
+import { Colors, Container, Effects, Column, Bgradient } from "../../styles/Styles"
 
 export const PlanoContainers = styled(Column)`
   width: 300px;
   height: 600px;
   padding: 30px;
-  background: #fff;
+background:${Colors.white};
   border-radius: 5px;
-  border: 1px solid ${Colors.primary};
+
   color:${Colors.black};
-  //filter: ${Effects.sombrinha};// 
+  filter: ${Effects.sombrinha}; 
 
   img{
     width: 30px;
