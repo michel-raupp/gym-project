@@ -101,6 +101,7 @@ height: auto;
 padding: 100px 0;
 
   h2{
+    padding: 0 30px;
     @media (max-width: 1050px){
       font-size: 50px
     }

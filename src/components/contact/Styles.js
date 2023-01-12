@@ -47,7 +47,7 @@ export const Formulario = styled.form`
 `
 export const Footer = styled(Container)`
   bottom: 0px;
-  background: rgb(11, 12, 14);
+  background: ${Colors.secondary};
   font-size: 16px;
   font-weight: 200;
   color: ${Colors.grey};

@@ -13,10 +13,10 @@ export const Logo = styled.p`
 `
 
 export const NavbarSection = styled.nav`
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(11, 12, 14);
+  background: ${Colors.secondary};
   padding: 20px 80px;
   filter: drop-shadow(0px 0px 5px ${Colors.black});
   
@@ -30,7 +30,9 @@ display: flex;
 }
 
 @media screen and (max-width: 768px) {
-  
+  padding: 20px 0;
+  justify-content: space-around;
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -41,7 +43,7 @@ display: flex;
     right: -300px;
     width: 300px;
     height: 100vh;
-    background: rgb(11, 12, 14);
+    background: rgb(30, 30, 30);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
     

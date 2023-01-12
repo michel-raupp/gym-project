@@ -22,7 +22,6 @@ export const PrimaryButton = styled(Button)`
     /* <motion.button animate={{ scale: 1.2}} initial={{scale: 1}}/> */
     background:none;
     border-color:${Colors.white};
-    filter: drop-shadow(0px 0px 5px ${Colors.primary});
     color: ${Colors.primary};
   }
   

@@ -8,7 +8,7 @@ export const TreinoContainer = styled(Container)`
     border-radius: 5px;
     padding: 40px 40px;
     border: 3px solid ${Colors.primary};
-    color:${Colors.primary};
+    color:${Colors.bright};
 
     img {
         filter: invert(100%);
@@ -131,7 +131,7 @@ export const TreinoContainer2 = styled.div`
 `
 export const ParagraphOrange = styled(Paragraph)`
     margin: 10px 0 0 0;
-    color: ${Colors.bright};
+    color: ${Colors.white};
 
     @media (max-width: 1050px){
         font-size: 14px;
@@ -141,7 +141,7 @@ export const ParagraphOrange = styled(Paragraph)`
 export const Treinos = styled(Column)`
   height: 700px;
   margin: 0;
-  background: rgb(0, 0, 0);
+  background: ${Colors.black};
 
   @media (max-width: 800px){
     height: 1100px;

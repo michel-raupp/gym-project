@@ -2,16 +2,16 @@ import styled from "styled-components"
 
 export const Colors = {
     primary: 'rgb(248, 99, 0)',
-    secondary: 'rgb(11, 12, 14)',
-    bright: 'rgb(249, 192, 154)',
+    secondary: 'rgb(35, 35, 35)',
+    bright: '#FFA061',
     grey: 'rgb(117, 117, 117)',
-    black: '#000',
+    black: 'rgb(25, 25, 25)',
     white: '#fff',
 }
 
 export const Effects ={
-    sombra:'drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2))',
-    brilho: 'drop-shadow(0px 0px 10px rgba(248, 99, 0, 0.7))'
+    sombra:'drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5))',
+    brilho: 'drop-shadow(0px 0px 5px rgba(248, 99, 0))'
 }
 
 export const FontSizes = {

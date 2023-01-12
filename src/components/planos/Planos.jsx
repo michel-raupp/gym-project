@@ -10,7 +10,7 @@ function Planos() {
     <PlanosSection id="planos">
       <h2 style={{ color: "rgb(248, 99, 0)"}}>
         START YOUR{" "}
-        <span style={{ color: "#000", margin: "0 0 0 10px" }}>JOURNEY</span>
+        <span style={{ color: "#000", margin: "0 0 0 10px" }}>JOURNEY NOW!</span>
       </h2>
       <PContainer>
         <PlanosBox 
