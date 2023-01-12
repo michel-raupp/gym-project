@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container, Colors, Column } from "../../styles/Styles";
+import { Container, Colors, Column, Bgradient } from "../../styles/Styles";
 
 export const Formulario = styled.form`
     display: flex;
@@ -14,7 +14,17 @@ export const Formulario = styled.form`
 
         @media (max-width: 600px){
             font-size: 50px;
+            line-height: 50px;
         }
+
+        @media (max-width: 480px){
+      font-size: 40px
+    }
+
+
+    @media (max-width: 480px){
+      font-size: 40px
+    }
     }
 
     input{
@@ -47,18 +57,18 @@ export const Formulario = styled.form`
 `
 export const Footer = styled(Container)`
   bottom: 0px;
-  background: ${Colors.secondary};
+  background: ${Bgradient.cinza};
   font-size: 16px;
   font-weight: 200;
   color: ${Colors.grey};
-  height: 70px;
+  height: auto;
   width: 100%;
-  padding: 50px;
+  padding: 20px;
 `
 
 export const FormsSection = styled(Column)`
     height: auto;
-    background: linear-gradient(0deg, rgba(24,25,27,1) 25%, rgba(30,30,32,1) 100%);
+    background: ${Bgradient.preto};
     width: 100%;
     padding: 100px 10px;
 `

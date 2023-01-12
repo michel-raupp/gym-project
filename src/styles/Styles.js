@@ -35,21 +35,6 @@ export const FontSizes = {
     rat: '16px',
 }
 
-export const Button = styled.button`
-//full centro + horizontal
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 3px solid ${Colors.primary};
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-    font-weight: 300;
-`
-
-
-
-
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
@@ -106,4 +91,9 @@ export const BgContainer = styled(Container)`
 export const Paragraph = styled.p`
 font-size: ${FontSizes.rat};
 color: ${Colors.black};
+width: 90%;
+
+@media (max-width: 1050px){
+        font-size: 14px;
+    }
 `

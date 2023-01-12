@@ -25,6 +25,7 @@ export const NavbarSection = styled.nav`
 }
 
 #navbar{
+  
   z-index: 4;
 }
 
@@ -38,7 +39,7 @@ export const NavbarSection = styled.nav`
   justify-content: space-around;
 
   #navbar {
-    display: none;
+    transition: 0.5s ease-in-out;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -49,8 +50,6 @@ export const NavbarSection = styled.nav`
     height: 100vh;
     background: ${Colors.secondary};
     padding: 40px 0 0 10px;
-    transition: 0.3s ease-in-out;
-    
   }
 
   #navbar li {
@@ -66,7 +65,6 @@ export const NavbarSection = styled.nav`
   }
 
   #navbar.active {
-    display: flex;
     right: 0px;
   }
 }

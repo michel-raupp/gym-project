@@ -11,6 +11,7 @@ export const TreinoContainer = styled(Container)`
     color:${Colors.primary};
     background: ${Colors.white};
     filter: ${Effects.sombrinha};
+
     img {
         width: 100px;
         
@@ -71,6 +72,8 @@ export const TreinoContainer = styled(Container)`
 export const TreinoTitle = styled.h2`
   
     color: ${Colors.white};
+    width: 80%;
+    line-height: 70px;
 
     @media (max-width: 1400px){
         font-size: 60px;
@@ -85,13 +88,19 @@ export const TreinoTitle = styled.h2`
     }
 
     @media (max-width: 600px){
+        line-height: 50px;
+        width: 70%;
         font-size: 51px;
         margin: 0 20px 20px 20px;
     }
 
-    @media (max-width: 500px){
+    @media (max-width: 480px){
+        line-height: 50px;
+        width: 90%;
         font-size: 40px;
+        margin: 0 20px 0px 20px;
     }
+
 `
 
 export const TreinoContainer2 = styled.div`
@@ -132,12 +141,9 @@ export const TreinoContainer2 = styled.div`
 export const ParagraphOrange = styled(Paragraph)`
     margin: 10px 0 0 0;
     color: ${Colors.black};
-
-    @media (max-width: 1050px){
-        font-size: 14px;
-    }
-
 `
+
+
 export const Treinos = styled(Column)`
   height: 700px;
   margin: 0;

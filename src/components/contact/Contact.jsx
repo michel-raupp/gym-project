@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { TerciaryButton } from '../buttons/Buttons'
 import emailjs from '@emailjs/browser'
 import { Formulario, Footer, FormsSection } from "./Styles";
-import { Column } from "../../styles/Styles";
 
 function Contact() {
 
@@ -44,11 +43,11 @@ function Contact() {
     <>
       <FormsSection>
         <Formulario id="contact" onSubmit={sendEmail}>
-          <h2> CONTACT US!</h2>
+        <h2> CONTACT US!</h2>
           <input
             className="input"
             type="text"
-            placeholder="Digite seu nome"
+            placeholder="What is your name?"
             onChange={(e) => setName(e.target.value)}
             value={name}
           />
@@ -57,7 +56,7 @@ function Contact() {
           <input
             className="input"
             type="text"
-            placeholder="Digite seu email"
+            placeholder="Type your E-mail"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
@@ -66,7 +65,7 @@ function Contact() {
           <input
             className="input"
             type="text"
-            placeholder="número"
+            placeholder="+55 (000) 0000-0000"
             onChange={(e) => setPhone(e.target.value)}
             value={phone}
           />
@@ -74,7 +73,7 @@ function Contact() {
 
           <textarea
             className="textarea"
-            placeholder="Digite sua mensagem..."
+            placeholder="Tell us the details of what do you want, so we can better help you!"
             onChange={(e) => setMessage(e.target.value)}
             value={message}
           />

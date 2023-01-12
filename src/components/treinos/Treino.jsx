@@ -23,10 +23,10 @@ function Treino() {
   return (
     <Treinos id="treinos">
       <TreinoTitle>
-        READY TO ASSIST
-        <span style={{ color: `${Colors.black}`, margin: "0 0 0 20px" }}>
-          YOU
-        </span>
+        READY TO ASSIST YOU!
+        {/* <span style={{ color: `${Colors.black}`, margin: "0 0 0 20px" }}> 
+           YOU
+         </span> */}
       </TreinoTitle>
       <Brilho>
         <TreinoContainer2>

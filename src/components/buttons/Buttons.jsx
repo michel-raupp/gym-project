@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors, Button } from "../../styles/Styles";
+import { Colors, Bgradient } from "../../styles/Styles";
 import { FontSizes } from "../../styles/Styles";
 // import * as React from "react";
 // import { render } from "react-dom";
@@ -8,26 +8,37 @@ import { FontSizes } from "../../styles/Styles";
 
 //Botão do header
 
-export const PrimaryButton = styled(Button)`
-    background: none;
-    color: ${Colors.white};
+export const PrimaryButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    border: 3px solid ${Colors.primary};
+    border-radius: 5px;
+    background: ${Bgradient.laranja};
+    
     margin-top: 80px;
     padding: 20px 50px;
 
+    color: ${Colors.white}; 
     font-size: ${FontSizes.cat};
-    filter: none; //drop-shadow(0px 0px 5px ${Colors.primary});//
+    font-weight: 300;
+
+    transition: 0.5s;
+    background: ${Bgradient.laranja};
     cursor: pointer;
-  
-  &:hover {
-    /* <motion.button animate={{ scale: 1.2}} initial={{scale: 1}}/> */
-    background:none;
-    border-color:${Colors.white};
-    color: ${Colors.primary};
+
+    &:hover{
+      background: ${Bgradient.cinza};
+    border-color: ${Colors.white};
+    color: ${Colors.white};
   }
   
   &:active {
-    border-color: ${Colors.bright};
-    color: ${Colors.bright};
+    background: ${Colors.white};
+    border-color: ${Colors.white};
+    color: ${Colors.black};
   }
   
   i {
@@ -38,30 +49,17 @@ export const PrimaryButton = styled(Button)`
 
 //Botão dos planos
 export const SecondaryButton = styled(PrimaryButton)`
-    background: ${Colors.primary};
-    color: ${Colors.white};
-    color: #fff;
     margin-top: 30px;
     padding: 10px 30px;
-    border: 3px solid '${Colors.primary}';
-    border-radius: 5px;
-    filter: none;
-    transition: 0.3s ease-in-out;
-    font-size: ${FontSizes.cat};
-
-    cursor: pointer;
-  
+    
   &:hover {
-    filter: none;
-    background: ${Colors.black};
-    border-color: ${Colors.black};
+    background: ${Bgradient.cinza};
     color: ${Colors.white};
+    border-color: ${Colors.black};
   }
   
   &:active {
-    background: ${Colors.white};
     border-color: ${Colors.black};
-    color: ${Colors.black};
   }
 
   @media (max-width: 1050px){
@@ -85,30 +83,9 @@ export const SecondaryButton = styled(PrimaryButton)`
 
 //botão do contato/footer
 export const TerciaryButton = styled(PrimaryButton)`
-    background: ${Colors.primary};
-    color: ${Colors.white};
     margin-top: 0px;
     padding: 10px 30px;
-    border: 3px solid '${Colors.primary}';
-    border-radius: 5px;
     width: 500px;
-    transition: 0.3s ease-in-out;
-    font-size: ${FontSizes.cat};
-    filter: none;
-    cursor: pointer;
-  
-  &:hover {
-    filter: none;
-    background: ${Colors.black};
-    border-color: ${Colors.white};
-    color: ${Colors.white};
-  }
-  
-  &:active {
-    background: ${Colors.white};
-    border-color: ${Colors.white};
-    color: ${Colors.black};
-  }
 
   @media (max-width: 800px){
     font-size: ${FontSizes.cat};

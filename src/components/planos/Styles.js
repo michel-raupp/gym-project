@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import { Colors, Container, Effects, Column, Bgradient } from "../../styles/Styles"
+import { Colors, Container, Effects, Column} from "../../styles/Styles"
 
 export const PlanoContainers = styled(Column)`
   width: 300px;
   height: 600px;
   padding: 30px;
-background:${Colors.white};
+  background:${Colors.white};
   border-radius: 5px;
 
   color:${Colors.black};
@@ -101,9 +101,16 @@ height: auto;
 padding: 100px 0;
 
   h2{
-    padding: 0 30px;
+    width: 90%;
+    line-height: 70px;
+
     @media (max-width: 1050px){
+      line-height: 50px;
       font-size: 50px
+    }
+
+    @media (max-width: 480px){
+      font-size: 40px
     }
   }
 
