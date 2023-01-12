@@ -131,7 +131,7 @@ export const TreinoContainer2 = styled.div`
 `
 export const ParagraphOrange = styled(Paragraph)`
     margin: 10px 0 0 0;
-    color: ${Colors.white};
+    color: ${Colors.grey};
 
     @media (max-width: 1050px){
         font-size: 14px;

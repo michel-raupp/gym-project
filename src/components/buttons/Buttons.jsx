@@ -15,7 +15,7 @@ export const PrimaryButton = styled(Button)`
     padding: 20px 50px;
 
     font-size: ${FontSizes.cat};
-    filter: drop-shadow(0px 0px 5px ${Colors.primary});
+    filter: none; //drop-shadow(0px 0px 5px ${Colors.primary});//
     cursor: pointer;
   
   &:hover {

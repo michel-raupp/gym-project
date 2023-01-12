@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import { FontSizes, Colors, Container} from "../../styles/Styles"
+import { FontSizes, Colors, Container, Effects} from "../../styles/Styles"
 
 export const Logo = styled.p`
   font-size: ${FontSizes.cat};
   color: ${Colors.primary};
   font-weight: 800;
-  filter: drop-shadow(0px 0px 15px ${Colors.primary});
+  /* filter: drop-shadow(0px 0px 15px ${Colors.primary}); */
 
   @media (max-width: 900px){
     font-size: 20px;
@@ -16,12 +16,16 @@ export const NavbarSection = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: ${Colors.secondary};
+  background: linear-gradient(0deg, rgba(24,25,27,1) 0%, rgba(33,33,35,1) 100%);
   padding: 20px 80px;
-  filter: drop-shadow(0px 0px 5px ${Colors.black});
+  filter: ${Effects.sombra};
   
 #mobile {
   display: none;
+}
+
+#navbar{
+  z-index: 4;
 }
 
 #mobile i {
@@ -34,16 +38,16 @@ export const NavbarSection = styled.nav`
   justify-content: space-around;
 
   #navbar {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    position: fixed;
-    top: 65px;
+    position: absolute;
+    top: 80px;
     right: -300px;
     width: 300px;
     height: 100vh;
-    background: rgb(30, 30, 30);
+    background: ${Colors.secondary};
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
     
@@ -62,6 +66,7 @@ export const NavbarSection = styled.nav`
   }
 
   #navbar.active {
+    display: flex;
     right: 0px;
   }
 }
@@ -107,6 +112,11 @@ a {
   @media (max-width: 900px){
         font-size: 12px;
   }
+
+  @media (max-width: 768px){
+        font-size: 20px;
+        padding-left: 20px;
+  }
 }
 
 li a:hover,
@@ -123,6 +133,10 @@ a.active::after {
   position: absolute;
   bottom: -4px;
   left: 20px;
+
+  @media (max-width: 768px){
+    left: 30px;
+  }
 }
 `
 
@@ -131,8 +145,7 @@ export const Icons = styled(Container)`
   height: 40px;
   justify-content: space-between;
   align-items: center;
-  filter: drop-shadow(0px 0px 5px ${Colors.primary});
-
+  /* filter: drop-shadow(0px 0px 5px ${Colors.primary}); */
   @media (max-width: 1000px){
     width: 90px;
   }
@@ -144,7 +157,6 @@ export const Icons = styled(Container)`
   a{
     height: 40px;
     width: 40px;
-    filter: invert();
 
     @media (max-width: 1000px){
       height: 25px;

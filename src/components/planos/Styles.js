@@ -7,9 +7,9 @@ export const PlanoContainers = styled(Column)`
   padding: 30px;
   background: #fff;
   border-radius: 5px;
-  border: 3px solid ${Colors.white};
+  border: 1px solid ${Colors.primary};
   color:${Colors.black};
-  filter: ${Effects.sombra}; 
+  //filter: ${Effects.sombrinha};// 
 
   img{
     width: 30px;

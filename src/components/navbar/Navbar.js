@@ -26,7 +26,7 @@ class Navbar extends Component {
                 </a>
               </li>
               <li>
-                <a href="#about_section">ABOUT</a>
+                <a href="#about-section">ABOUT</a>
               </li>
               <li>
                 <a href="#treinos">TRAININGS</a>

@@ -2,16 +2,17 @@ import styled from "styled-components"
 
 export const Colors = {
     primary: 'rgb(248, 99, 0)',
-    secondary: 'rgb(35, 35, 35)',
+    secondary: '#1E1E20',
     bright: '#FFA061',
     grey: 'rgb(117, 117, 117)',
-    black: 'rgb(25, 25, 25)',
+    black: '#18191B',
     white: '#fff',
 }
 
 export const Effects ={
-    sombra:'drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5))',
-    brilho: 'drop-shadow(0px 0px 5px rgba(248, 99, 0))'
+    sombra: 'none',  //'drop-shadow(0px 0px 10px rgba(0, 0, 0))',//
+    sombrinha: 'drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.4))',
+    brilho: 'none' //drop-shadow(0px 0px 5px rgba(248, 99, 0))//
 }
 
 export const FontSizes = {
@@ -67,7 +68,7 @@ export const FlexStartAlign = styled(Container)`
 //Bg é Background
 export const BgBlack = styled.div`
     width: 70%;
-    background: ${Colors.black};
+    background: linear-gradient(36deg, rgba(24,25,27,1) 50%, rgba(33,33,35,1) 100%);
     height: 900px;
 
     @media (max-width: 800px){
@@ -80,7 +81,7 @@ export const BgBlack = styled.div`
 `
 
 export const BgOrange = styled(BgBlack)`
-  background: ${Colors.primary};
+  background: linear-gradient(0deg, rgba(217,77,2,1) 0%, rgba(248,99,0,1) 53%, rgba(255,117,25,1) 100%);
   width: 30%;
   @media (max-width: 800px){
   display: none;

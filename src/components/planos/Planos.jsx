@@ -4,11 +4,12 @@ import check1 from "../../assets/icons/x.png";
 import check2 from "../../assets/icons/check.png";
 import { PContainer } from "./Styles";
 import { PlanosSection } from "./Styles";
+import { Colors } from "../../styles/Styles";
 
 function Planos() {
   return (
     <PlanosSection id="planos">
-      <h2 style={{ color: "rgb(248, 99, 0)"}}>
+      <h2 style={{ color: `${Colors.primary}`}}>
         START YOUR{" "}
         <span style={{ color: "#000", margin: "0 0 0 10px" }}>JOURNEY NOW!</span>
       </h2>
@@ -33,7 +34,7 @@ function Planos() {
           p_subtitle5="Professional Support"
         />
 
-        <PlanosBox style={{ backgroundColor: "rgb(248, 99, 0)"}}
+        <PlanosBox style={{ backgroundColor: `${Colors.primary}`}}
           p_title="PLUS"
           plano_preco={
             <h3 style={{ fontSize: "24px", width: "221px" }}>

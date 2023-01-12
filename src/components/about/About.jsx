@@ -8,7 +8,7 @@ import {Circle, AboutIMGs, AboutTextos, GymIMG, GymIMG2, GymIMG3, AboutSection} 
  
 function About() {
   return (
-    <AboutSection >
+    <AboutSection id="about-section" >
       <AboutIMGs>
         <GymIMG src={img3}/>
         <GymIMG2 src={img7}/>

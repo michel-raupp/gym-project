@@ -6,7 +6,6 @@ export const Title = styled.h1`
     color: ${props => props.primary ? `${Colors.white}` : `${Colors.primary}`};
     font-weight: 800;
     margin-top: ${props => props.primary ? 0 : '-30px'};
-    filter: ${props => props.primary ? 'none' : `${Effects.brilho}`};
 
     @media (max-width: 1400px){
         font-size: ${props => props.primary ? `60px` : `${FontSizes.hippo}`};
@@ -29,7 +28,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.p`
     color: ${Colors.grey};
     font-weight: 300;
-    font-size: ${FontSizes.wolf};
+    font-size: 30px;
     margin: 30px 0 0 0;
 
     @media (max-width: 1400px){
@@ -57,6 +56,7 @@ export const ContainerIMG = styled.img`
   margin-left: 50px;
   z-index: -1;
   position: relative;
+
 
   @media (max-width: 1400px){
     width: 500px;

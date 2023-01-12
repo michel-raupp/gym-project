@@ -58,7 +58,7 @@ export const Footer = styled(Container)`
 
 export const FormsSection = styled(Column)`
     height: auto;
-    background-color: ${Colors.black};
+    background: linear-gradient(0deg, rgba(24,25,27,1) 25%, rgba(30,30,32,1) 100%);
     width: 100%;
     padding: 100px 10px;
 `

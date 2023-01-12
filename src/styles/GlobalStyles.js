@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${Colors.secondary};
   }
   ::-webkit-scrollbar-thumb{
-    background: ${Colors.primary};
+    background: linear-gradient(0deg, rgba(217,77,2,1) 0%, rgba(248,99,0,1) 53%, rgba(255,117,25,1) 100%);
     border: solid 2px ${Colors.secondary};;
     border-radius: 25px;
     transition: 0.5s ease-in-out;
