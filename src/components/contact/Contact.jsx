@@ -15,7 +15,8 @@ function Contact() {
     e.preventDefault();
 
     if (name === '' || email === '' || phone === '' || message === '') {
-      console.log("Faltou alguma coisa");
+      console.log("It seems that you forgot to fill a form...");
+      console.log("It seems that you forgot to fill a form...");
       return;
     }
 
@@ -28,7 +29,8 @@ function Contact() {
 
     emailjs.send("service_qin5epq", "template_mdf14ix", temmplateParams, "YJl9oIyHRHnb8meSd")
       .then((response) => {
-        console.log("EMAIL ENVIADO", response.status, response.text)
+        console.log("The email was sucessfully sent!", response.status, response.text)
+        alert("The email was sucessfully sent!", response.status, response.text)
         setName('')
         setEmail('')
         setPhone('')
@@ -36,6 +38,7 @@ function Contact() {
 
       }, (err) => {
         console.log("erro ", err)
+        alert("ERROR: ", err)
       })
   }
 
@@ -78,32 +81,10 @@ function Contact() {
             value={message}
           />
           <br />
-
-          {/* <form>
-        <input type="text" placeholder="Your Name" required />
-        <br />
-        <input type="email" placeholder="Type your E-mail" required />
-        <br />
-        <input type="text" placeholder="Phone Number" required />
-      </form> */}
           <TerciaryButton className="button" type="submit">
             Submit
             <i class="bx bx-right-arrow-alt bx-md" />
           </TerciaryButton>
-
-
-          {/* <label>
-        Do you agree on receiving promotionals emails from XXXX.
-        <input type="checkbox" />
-        <span></span>
-      </label> */}
-          {/* <button className="contact-btns">
-        <a href className="contact-btn">
-          SUBMIT
-        </a>
-        <i class="bx bx-right-arrow-alt bx-md"></i>
-      </button> */}
-
         </Formulario>
 
       </FormsSection>

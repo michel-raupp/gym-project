@@ -45,15 +45,17 @@ export const NavbarSection = styled.nav`
     align-items: flex-start;
     position: absolute;
     top: 80px;
-    right: -300px;
-    width: 300px;
+    right: 0px;
+    width: 0px;
     height: 100vh;
     background: ${Colors.secondary};
     padding: 40px 0 0 10px;
   }
 
   #navbar li {
-    margin-bottom: 25px;
+    color: blue;
+    display: none;
+    margin-bottom: 50px;
   }
   #mobile {
     display: block;
@@ -65,7 +67,10 @@ export const NavbarSection = styled.nav`
   }
 
   #navbar.active {
-    right: 0px;
+    width: 100%;
+    li {
+      display: flex;
+  }
   }
 }
 
@@ -162,3 +167,4 @@ export const Icons = styled(Container)`
     }
   }
 `
+
