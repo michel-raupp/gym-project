@@ -40,11 +40,11 @@ class Navbar extends Component {
             </Menu>
           </div>
 
-          <Icons>
-            <a href>
+          <Icons> 
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
               <img src={insta} className="navbar-icon" alt="" />{" "}
             </a>
-            <a href>
+            <a href="https://www.whatsapp.com" target="_blank" rel="noreferrer">
               <img src={wpp} className="navbar-icon" alt="" />{" "}
             </a>
           </Icons>

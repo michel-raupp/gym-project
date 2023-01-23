@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { Colors, Bgradient } from "../../styles/Styles";
 import { FontSizes } from "../../styles/Styles";
-// import * as React from "react";
-// import { render } from "react-dom";
-// import { motion } from "framer-motion";
-
 
 //Botão do header
 
@@ -43,6 +39,12 @@ export const PrimaryButton = styled.button`
   
   i {
     margin-left: 5px;
+  }
+
+  @media (max-width: 3500px){
+    font-size: ${FontSizes.cat};
+    margin: 70px 0 70px 0;
+    padding: 20px 30px;
   }
 `
 

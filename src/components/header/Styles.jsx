@@ -23,6 +23,9 @@ export const Title = styled.h1`
     @media (max-width: 600px){
         font-size: ${props => props.primary ? `51px` : `${FontSizes.horse}`};
     }
+    @media (max-width: 370px){
+        font-size: ${props => props.primary ? `40px` : `55px`};
+    }
 
 `
 export const Subtitle = styled.p`
