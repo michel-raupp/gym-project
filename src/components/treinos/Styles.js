@@ -69,8 +69,7 @@ export const TreinoContainer = styled(Container)`
 
 `
 
-export const TreinoTitle = styled.h2`
-  
+export const TreinoTitle = styled.h2`  
     color: ${Colors.white};
     width: 80%;
     line-height: 70px;

@@ -45,7 +45,6 @@ export const PlanoContainers = styled(Column)`
       @media (max-width: 800px){
         font-size: 16px;
         width: 300px;
-
       }
 
       @media (max-width: 500px){

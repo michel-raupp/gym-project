@@ -5,8 +5,6 @@ export const Logo = styled.p`
   font-size: ${FontSizes.cat};
   color: ${Colors.primary};
   font-weight: 800;
-  /* filter: drop-shadow(0px 0px 15px ${Colors.primary}); */
-
   @media (max-width: 900px){
     font-size: 20px;
   }
@@ -25,7 +23,6 @@ export const NavbarSection = styled.nav`
 }
 
 #navbar{
-  
   z-index: 4;
 }
 
@@ -37,7 +34,6 @@ export const NavbarSection = styled.nav`
 @media screen and (max-width: 768px) {
   padding: 20px 0;
   justify-content: space-around;
-
   #navbar {
     transition: 0.5s ease-in-out;
     flex-direction: column;
@@ -46,30 +42,30 @@ export const NavbarSection = styled.nav`
     position: absolute;
     top: 80px;
     right: 0px;
-    width: 0px;
-    height: 100vh;
+    width: 100%;
+    height: 0;
     background: ${Colors.secondary};
-    padding: 40px 0 0 10px;
+    padding: 40px 0 0 0px;
   }
-
   #navbar li {
-    color: blue;
-    display: none;
+    overflow: hidden;  /* Hide the element content, while height = 0 */
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
     margin-bottom: 50px;
   }
   #mobile {
     display: block;
   }
-
   #mobile i {
     font-size: 24px;
     cursor: pointer;
   }
-
   #navbar.active {
-    width: 100%;
+    height: 50vh;
     li {
-      display: flex;
+      height: auto; opacity: 1;
+    transition: height 0ms 0ms, opacity 600ms 0ms;
   }
   }
 }
@@ -77,8 +73,6 @@ export const NavbarSection = styled.nav`
   a{
     cursor: pointer;
   }
-
-
 `
 
 export const Menu = styled.ul`
@@ -94,7 +88,6 @@ li {
   @media (max-width: 1000px){
     padding: 0 15px;
   }
-
   @media (max-width: 900px){
     padding: 0 10px;
   }
@@ -109,16 +102,14 @@ a {
   transition: 0.3s ease-in-out;
 
   @media (max-width: 1000px){
-        font-size: 14px;
+    font-size: 14px;
   }
-
   @media (max-width: 900px){
-        font-size: 12px;
+    font-size: 12px;
   }
-
   @media (max-width: 768px){
-        font-size: 20px;
-        padding-left: 20px;
+    font-size: 20px;
+    padding-left: 20px;
   }
 }
 

@@ -88,7 +88,7 @@ function Contact() {
         </Formulario>
 
       </FormsSection>
-      <Footer>Designed and developed by Michel Raupp @ 2022. Icons by Unicons and
+      <Footer>Designed and developed for studies purposes by Michel Raupp @ 2023. Icons by Unicons and
         Flaticons.</Footer>
     </>
   )

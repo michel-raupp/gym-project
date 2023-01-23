@@ -6,19 +6,15 @@ export const AboutIMGs = styled(Container)`
   height: auto;
   width: 500px;
 
-
   @media (max-width: 1050px){
       margin: 80px 0 0 0;
   } 
-
   @media (max-width: 800px){
     margin: 0px 0 150px 0px;
   } 
-
   @media (max-width: 600px){
       margin: 0px 0 150px 0px;
   } 
-
   @media (max-width: 500px){
       width: 100%;
   } 
@@ -51,13 +47,9 @@ export const GymIMG2 = styled(GymIMG)`
       width: 220px;
       height: 220px;
   } 
-
-
 `
-
 export const GymIMG3 = styled(GymIMG)`
 //balance
-
   transform: rotate(-30deg);
   margin: -190px 0 0 150px;
   width: 200px;
@@ -68,10 +60,7 @@ export const GymIMG3 = styled(GymIMG)`
       height: 150px;
       margin: -150px 0 0 90px;
   } 
-
-
 `
-
 
 export const Circle = styled.div`
   z-index: -3;
@@ -86,14 +75,12 @@ export const Circle = styled.div`
       height: 220px;
       margin: -250px 0 -100px -10px;
   } 
-
   @media (max-width: 800px){
       margin: -250px 0 0px 0px;
   } 
 `
 
 export const AboutTextos = styled(Container)`
-  
   width: 500px;
   margin: -30px 0 0 0;
   text-align: left;
@@ -102,16 +89,13 @@ export const AboutTextos = styled(Container)`
   @media (max-width: 1400px){
     align-items: baseline;
   }
-
   @media (max-width: 1200px){
       width: 400px; 
   }
-
   @media (max-width: 1050px){
     margin: 0 0 0 -50px;
     width: 450px;
   }
-  
   @media (max-width: 800px){
       margin: -120px 0 0 0;
       width: 90%;
@@ -162,16 +146,12 @@ export const AboutSection = styled(Container)`
     margin: 280px 100px 60px 0px;
     padding: 100px 0;
 
-
     @media (max-width: 1400px){
       margin: 350px 0px 60px 0px;
     }
-
     @media (max-width: 1000px){
       margin: 350px 80px 60px 0px;
     }
-
-
     @media (max-width: 800px){
       margin: 380px 0px 0px 0px;
       flex-direction: column;

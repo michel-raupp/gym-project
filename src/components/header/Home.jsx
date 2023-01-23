@@ -17,9 +17,9 @@ function Header() {
           <Title primary={false}>THE GYM!</Title>
 
           <Subtitle>Achieve a better version of you!</Subtitle>
-          <a href="#planos">
+          <a href="https://github.com/michel-raupp/gym-project" target="_blank" rel="noreferrer">
             <PrimaryButton>
-              START NOW
+              Acess GitHub
               <i class="bx bx-right-arrow-alt bx-md"></i>
             </PrimaryButton>
           </a>
