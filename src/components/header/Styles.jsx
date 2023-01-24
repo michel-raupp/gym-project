@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { FontSizes, Colors, Container, Effects } from "../../styles/Styles"
+import { FontSizes, Colors, Container} from "../../styles/Styles"
 
 export const Title = styled.h1`
     font-size: ${props => props.primary ? '72px' : `${FontSizes.giraffe}`};
@@ -11,22 +11,18 @@ export const Title = styled.h1`
         font-size: ${props => props.primary ? `60px` : `${FontSizes.hippo}`};
         margin-bottom: ${props => props.primary ? 0 : '-30px'};
     }
-
     @media (max-width: 1050px){
         font-size: ${props => props.primary ? `51px` : `${FontSizes.horse}`};
     }
-
     @media (max-width: 800px){
         font-size: ${props => props.primary ? `72px` : `${FontSizes.giraffe}`};
     }
-
     @media (max-width: 600px){
         font-size: ${props => props.primary ? `51px` : `${FontSizes.horse}`};
     }
     @media (max-width: 370px){
         font-size: ${props => props.primary ? `40px` : `55px`};
     }
-
 `
 export const Subtitle = styled.p`
     color: ${Colors.grey};

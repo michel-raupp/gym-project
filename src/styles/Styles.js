@@ -63,12 +63,21 @@ export const BgBlack = styled.div`
     background: ${Bgradient.cinza};
     height: 900px;
 
-    @media (max-width: 800px){
-        width: 100%;
+    @media (max-width: 1400px){
+        height: 700px;
     }
 
-    @media (max-width: 600px){
+    @media (max-width: 1050px){
+        height: 650px;
+    }
+
+    @media (max-width: 800px){
+        width: 100%;
         height: 700px;
+    }
+
+    @media (max-width: 370px){
+      height: 600px;
     }
 `
 
