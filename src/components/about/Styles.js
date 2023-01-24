@@ -10,10 +10,10 @@ export const AboutIMGs = styled(Container)`
       margin: 80px 0 0 0;
   } 
   @media (max-width: 800px){
-    margin: 0px 0 150px 0px;
+    margin: 0px 0 200px 0px;
   } 
   @media (max-width: 600px){
-      margin: 0px 0 150px 0px;
+      margin: 0px 0 200px 0px;
   } 
   @media (max-width: 500px){
       width: 100%;
@@ -143,19 +143,23 @@ export const AboutTextos = styled(Container)`
 
 
 export const AboutSection = styled(Container)`
-    margin: 280px 100px 60px 0px;
+    margin: 200px 100px 60px 0px;
     padding: 100px 0;
 
     @media (max-width: 1400px){
-      margin: 350px 0px 60px 0px;
+      margin: 200px 0px 60px 0px;
     }
     @media (max-width: 1000px){
-      margin: 350px 80px 60px 0px;
+      margin: 200px 80px 60px 0px;
     }
     @media (max-width: 800px){
-      margin: 380px 0px 0px 0px;
+      margin: 250px 0px 0px 0px;
       flex-direction: column;
       justify-content: center;
+    }
+    @media (max-width: 600px){
+      margin: 350px 0px 0px 0px;
+
     }
     
 `
