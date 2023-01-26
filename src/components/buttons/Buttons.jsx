@@ -51,7 +51,7 @@ export const PrimaryButton = styled.button`
 
 //Botão dos planos
 export const SecondaryButton = styled(PrimaryButton)`
-    margin-top: 30px;
+    margin: 30px 0 0 0;
     padding: 10px 30px;
     
   &:hover {
@@ -77,7 +77,6 @@ export const SecondaryButton = styled(PrimaryButton)`
   
   @media (max-width: 800px){
     font-size: ${FontSizes.cat};
-    margin-top: 30px;
     padding: 10px 30px;
   }
 
